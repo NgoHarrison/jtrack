@@ -1,0 +1,24 @@
+{
+    "name": "JTrack",
+    "description": "Keep track of jobs applied to",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ]
+      ,
+      "browser_action": {
+        "default_icon": "logo.png"
+      },
+
+      "background": {
+        "scripts": ["background.js"]
+      },
+      "permissions": ["http://localhost/*"]
+
+  }

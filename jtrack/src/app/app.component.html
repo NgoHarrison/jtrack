@@ -1,0 +1,21 @@
+<h1 style="text-align: center;padding: 20px;" class="mat-headline">My jobs</h1>
+<mat-accordion class="example-headers-align">
+  <div *ngFor="let group of joblist">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{group[0].jobsite}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+  <mat-list-item *ngFor="let job of group">
+    <h4 mat-line>Title: {{job.jobtitle}}</h4>
+    <h4 mat-line>Date Applied: {{job.jobdate}}</h4>
+    <h4 mat-line><a style="color: #000000;"href="{{job.joblink}}">{{job.joblink}}</a></h4>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+
+  </mat-expansion-panel>
+  </div>
+</mat-accordion>

@@ -1,0 +1,28 @@
+.mat-subheader {
+    font-size: 24px;
+    color: #00BCD4;
+}
+
+h2.mat-subheader {
+    font-size: 20px;
+}
+
+h4.mat-line {
+  font-size: 20px;
+  color: #000000;
+}
+
+mat-divider{
+    display: block;
+  margin: 10px 0 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  width: 100%
+}
+
+mat-expansion-panel{
+  background-color: #00838F;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+}
+mat-expansion-panel-header{
+  background-color: #E91E63;
+}
